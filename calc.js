@@ -18,6 +18,12 @@ reader.question("What would you like to calculate?", function(input){
 	console.log("num1 ", num1);
 	console.log("num2 ", num2);
 
+	// if (num1 === null){
+
+	// 	console.log("You didn't enter a number correctly.")
+
+	// }
+	
 	if(mathSymbol === "+"){
 		
 		let result = num1 + num2;
