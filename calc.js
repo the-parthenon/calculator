@@ -50,11 +50,11 @@ reader.question("What would you like to calculate?", function(input){
 
 	}
 
-	// else{
+	else{
 
-	// 	console.log("I don't understand the operation.")
+		console.log("I don't understand the operation.")
 
-	// }
+	}
 
 	// This line closes the connection to the command line interface.
 	reader.close()
