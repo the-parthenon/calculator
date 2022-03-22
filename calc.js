@@ -78,6 +78,12 @@ reader.question("What would you like to calculate?", function(input){
 		let result = Math.pow(num1, num2);
 		console.log("The result is ", result);
 	}
+
+	else if (mathSymbol === "%"){
+
+		let result = num1 % num2;
+		console.log("The result is", result);
+	}
 	
 	else{
 
