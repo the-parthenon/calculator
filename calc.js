@@ -30,7 +30,12 @@ reader.question("What would you like to calculate?", function(input){
 		console.log("The result is ", result);
 	}
 
-	
+	else if(mathSymbol === "/"){
+
+		let result = num1 / num2;
+		console.log("The result is ", result);
+
+	}
 
 	// This line closes the connection to the command line interface.
 	reader.close()
