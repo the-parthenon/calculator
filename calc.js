@@ -18,16 +18,16 @@ reader.question("What would you like to calculate?", function(input){
 	console.log("num1 ", num1);
 	console.log("num2 ", num2);
 
-	if (isNaN(num1)){
+	// if (isNaN(num1)){
 
-		console.log("Your first number isn't a number!")
+	// 	console.log("Your first number isn't a number!")
 
-	}
+	// }
 	
-	if (isNaN(num2)){
+	// if (isNaN(num2)){
 
-		console.log("You didn't enter two numbers!")
-	}
+	// 	console.log("You didn't enter two numbers!")
+	// }
 
 	if(mathSymbol === "+"){
 		
@@ -60,10 +60,28 @@ reader.question("What would you like to calculate?", function(input){
 		console.log("The result is ", result);
 
 	}
+
+	else if (mathSymbol === "square"){
+
+		let result = Math.pow(num1, 2);
+		console.log("The result is ", result);
+	}
+
+	else if (mathSymbol === "cube"){
+
+		let result = Math.pow(num1, 3);
+		console.log("The result is ", result);
+	}
+
+	else if (mathSymbol === "^"){
+
+		let result = Math.pow(num1, num2);
+		console.log("The result is ", result);
+	}
 	
 	else{
 
-		console.log("I don't understand the operation.")
+		console.log("You are sure to be eaten by a grue.")
 
 	}
 
