@@ -13,10 +13,12 @@ reader.question("What would you like to calculate?", function(input){
 	mathSymbol = tokens[0];
 	num1 = Number(tokens[1]);
 	num2 = Number(tokens[2]);
+	num3 = Number(tokens[3]);
 
 	console.log("mathSymbol ", mathSymbol);
 	console.log("num1 ", num1);
 	console.log("num2 ", num2);
+	console.log("num3 ", num3);
 
 	// if (isNaN(num1)){
 
@@ -31,8 +33,19 @@ reader.question("What would you like to calculate?", function(input){
 
 	if(mathSymbol === "+"){
 		
-		let result = num1 + num2;
-		console.log("The result is ", result);
+		if(isNaN(num3)){
+			
+			let result = num1 + num2;
+			console.log("The result is ", result);
+
+		}
+		
+		else{
+
+			let result = num1 + num2 + num3;
+			console.log("The result is ", result);
+			
+		}
 	}
 
 	else if(mathSymbol === "-"){
