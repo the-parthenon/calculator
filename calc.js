@@ -18,12 +18,17 @@ reader.question("What would you like to calculate?", function(input){
 	console.log("num1 ", num1);
 	console.log("num2 ", num2);
 
-	// if (num1 === null){
+	if (isNaN(num1)){
 
-	// 	console.log("You didn't enter a number correctly.")
+		console.log("Your first number isn't a number!")
 
-	// }
+	}
 	
+	if (isNaN(num2)){
+
+		console.log("You didn't enter two numbers!")
+	}
+
 	if(mathSymbol === "+"){
 		
 		let result = num1 + num2;
@@ -55,7 +60,7 @@ reader.question("What would you like to calculate?", function(input){
 		console.log("The result is ", result);
 
 	}
-
+	
 	else{
 
 		console.log("I don't understand the operation.")
